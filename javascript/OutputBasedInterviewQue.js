@@ -114,3 +114,26 @@
 // }
 
 // console.log(findLargest([2, [3, 55, [4, 5, 666]], 5, 6]));
+
+// ===========================================================================
+
+// 9. Write a JavaScript function that returns the Fibonacci sequence up to a given number of terms.
+
+function fibonacciSequence(numTerms) {
+  if (numTerms <= 0) return [];
+
+  if (numTerms === 1) return [0];
+
+  let sequence = [0, 1];
+
+  while (sequence.length < numTerms) {
+    let nextNumber =
+      sequence[sequence.length - 1] + sequence[sequence.length - 2];
+
+    sequence.push(nextNumber);
+  }
+
+  return sequence;
+}
+
+console.log(fibonacciSequence(5));
