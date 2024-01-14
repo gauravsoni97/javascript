@@ -83,3 +83,34 @@
 // }
 
 // console.log(factorial(3));
+
+// ==================================================================
+
+// 7. Write a JavaScript function to check if a given number is prime.
+
+// answer: To check if a given number is prime, loop from 2 to the square root of the number. If any integer evenly divides it, the number is not prime.
+
+// function isPrime(num) {
+//   if (num <= 1) return false;
+
+//   for (let i = 2; i <= Math.sqrt(num); i++) {
+//     if (num % i === 0) return false;
+//   }
+
+//   return true;
+// }
+
+// console.log(isPrime(2));
+
+// =====================================================================
+
+// 8. Write a JavaScript program to find the largest element in a nested array.
+
+// - EASY SOLUTION
+
+// function findLargest(arr) {
+//   let FlatArr = arr.flat(Infinity);
+//   console.log(Math.max(...FlatArr));
+// }
+
+// console.log(findLargest([2, [3, 55, [4, 5, 666]], 5, 6]));
