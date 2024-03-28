@@ -70,3 +70,16 @@ console.log(
 
 // 3. Write a JavaScript program to rotate the string 'w3resource' in the right direction. This is done by periodically removing one letter from the string end and attaching it to the front.
 
+// ----------  Rotate an array element by k times
+
+// const arr = [2, 3, 3, 4];
+
+// function RotateArr(curr, k) {
+//   for (let i = 0; i < k; i++) {
+//     curr.unshift(curr.pop());
+//   }
+
+//   return curr;
+// }
+
+// console.log(RotateArr([...arr], 3));
