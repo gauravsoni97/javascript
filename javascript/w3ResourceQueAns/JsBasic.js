@@ -1,7 +1,3 @@
-console.log(
-  "~~~~~~~~~~~~~~~~~~~~  Javascript Basic Questions  ~~~~~~~~~~~~~~~~~~"
-);
-
 // --------------------------------------------------------------------------------------------------
 
 // 1. Write a JavaScript program to display the current day and time in the following format.
@@ -83,3 +79,18 @@ console.log(
 // }
 
 // console.log(RotateArr([...arr], 3));
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// Write a JavaScript program where the program takes a random integer between 1 and 10, and the user is then prompted to input a guess number. The program displays a message "Good Work" if the input matches the guess number otherwise "Not matched".
+
+// function GuessNum() {
+//   const randomNum = Math.floor(Math.random() * 10);
+//   console.log(randomNum);
+//   const inputVal = document.getElementById("textBox").value;
+//   if (inputVal === randomNum) {
+//     alert("Good Work");
+//   } else {
+//     alert("Not matched");
+//   }
+// }
