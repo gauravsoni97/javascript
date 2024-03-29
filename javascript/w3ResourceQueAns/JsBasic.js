@@ -94,3 +94,79 @@
 //     alert("Not matched");
 //   }
 // }
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// Write a JavaScript program to create another string by adding "Py" in front of a given string. If the given string begins with "Py" return the original string.
+
+// My answer -----
+
+// let RandomStr = "PyrandomString";
+
+// function PyChecker(str) {
+//   if (str != "") {
+//     if (str.charAt(0) === "P" && str.charAt(1) === "y") {
+//       return str;
+//     } else {
+//       return `Py${str}`;
+//     }
+//   }
+// }
+
+// console.log(PyChecker(RandomStr));
+
+// Right Approach
+
+// let RandomStr = "PsdfyrandomString";
+
+// function PyChecker(str) {
+//   if (str != "" && str.substring(0, 2) === "Py") {
+//     return str;
+//   } else {
+//     return `Py${str}`;
+//   }
+// }
+
+// console.log(PyChecker(RandomStr));
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// 51. Write a JavaScript application that transforms a provided numerical value into hours and minutes.
+
+// function timeConverter(num) {
+//   let hour = Math.round(num / 60);
+//   let min = Math.round(num % 60);
+
+//   return `${hour}hrs:${min}mins`;
+// }
+
+// console.log(timeConverter(122));
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// 50. Write a JavaScript program to capitalize the first letter of each word in a given string.
+
+// function capitalizeString(str) {
+//   return str
+//     .split(" ")
+//     .map((ele) => ele.charAt(0).toUpperCase() + ele.slice(1))
+//     .join(" ");
+// }
+
+// console.log(capitalizeString("this is String"));
+
+// 52. Write a JavaScript program to convert letters of a given string alphabetically.
+
+// function sortString(str) {
+//   return str
+//     .split("")
+//     .sort()
+//     .filter((ele) => ele !== " ");
+// }
+
+// console.log(sortString("this is String"));
+
+// 54. Write a JavaScript program to count the number of vowels in a given string.
+
