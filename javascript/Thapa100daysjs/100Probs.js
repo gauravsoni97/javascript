@@ -24,3 +24,23 @@
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// que3 - Character counter
+
+function CharCounter(str, k) {
+  if (str != "") {
+    let counter = str
+      .toLowerCase()
+      .split("")
+      .filter((ele) => ele == k).length;
+
+    if (counter > 0) {
+      return counter;
+    } else {
+      alert(" no match found ");
+    }
+  } else {
+    alert("No String to match");
+  }
+}
+
+console.log(CharCounter("IdidIii", "i"));
