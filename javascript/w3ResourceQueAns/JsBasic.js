@@ -169,4 +169,60 @@
 // console.log(sortString("this is String"));
 
 // 54. Write a JavaScript program to count the number of vowels in a given string.
+// // ==> Right appraoch
+// function vowels(str) {
+//   let arr = ["a", "e", "i", "o", "u"],
+//     num = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < str.length; j++) {
+//       if (arr[i] === str[j].toLowerCase()) {
+//         num += 1;
+//       }
+//     }
+//   }
+//   return `Vowels '${num}'`;
+// }
+// console.log(vowels("hello"));
 
+// ==== > My Solution
+
+//The amount of vowels is '18'
+// const vowels = "aeiou";
+
+// function VowelsCounter(str, vow) {
+//   return str
+//     .split("")
+//     .filter(
+//       (ele) =>
+//         ele === "a" || ele === "e" || ele === "i" || ele === "o" || ele === "u"
+//     ).length;
+// }
+
+// console.log(VowelsCounter("this is a e string", vowels));
+
+// 62. Write a JavaScript program to move the last three characters to the start of a given string. The string length must be greater than or equal to three.
+
+// const str = "this is string";
+// const k = 3;
+
+// function RotateString(str, k) {
+//    return str.split("").slice(-3) 
+// }
+
+// console.log(RotateString(str, k));
+
+
+
+// Define a function named right_three with parameter str
+
+// const str = "this is string";
+// const k = 3;
+
+// function RotateString(str, k) {
+//     if (str.length > 1) {
+//         return str.slice(-k) + str.slice(0, -k);
+//     }
+//     return str;
+// }
+
+// console.log(RotateString(str, k));
