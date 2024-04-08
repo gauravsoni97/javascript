@@ -119,21 +119,21 @@
 
 // 9. Write a JavaScript function that returns the Fibonacci sequence up to a given number of terms.
 
-function fibonacciSequence(numTerms) {
-  if (numTerms <= 0) return [];
+// function fibonacciSequence(numTerms) {
+//   if (numTerms <= 0) return [];
 
-  if (numTerms === 1) return [0];
+//   if (numTerms === 1) return [0];
 
-  let sequence = [0, 1];
+//   let sequence = [0, 1];
 
-  while (sequence.length < numTerms) {
-    let nextNumber =
-      sequence[sequence.length - 1] + sequence[sequence.length - 2];
+//   while (sequence.length < numTerms) {
+//     let nextNumber =
+//       sequence[sequence.length - 1] + sequence[sequence.length - 2];
 
-    sequence.push(nextNumber);
-  }
+//     sequence.push(nextNumber);
+//   }
 
-  return sequence;
-}
+//   return sequence;
+// }
 
-console.log(fibonacciSequence(5));
+// console.log(fibonacciSequence(5));
