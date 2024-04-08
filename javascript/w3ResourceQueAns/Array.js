@@ -88,10 +88,6 @@ console.log("Array Que Ans");
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-// 8. Write a JavaScript program to find the most frequent item in an array.
-// Sample array : var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
-// Sample Output : a ( 5 times )
-
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // 9. Write a JavaScript program that accepts a string as input and swaps the case of each character. For example if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'.
 
@@ -110,4 +106,30 @@ console.log("Array Que Ans");
 //   const swappedString = swapCase(inputString);
 //   console.log(swappedString); // Output: tHE qUICK bROWN fOX
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// // *8. Write a JavaScript program to find the most frequent item in an array.
+// //*  Sample array : var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+// // *  Sample Output : a ( 5 times );
+
+// let arr = [3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3];
+
+// let uniqueVal = [...new Set(arr)];
+
+// let maxVal = 0;
+// let Char = null;
+
+// for (let i = 0; i < uniqueVal.length; i++) {
+//   let length = arr.filter((ele) => ele == uniqueVal[i]).length;
+
+//   if (maxVal < length) {
+//     maxVal = length;
+//     Char = uniqueVal[i];
+//   }
+// }
+
+// console.log(maxVal, Char);
+
+// 14. Write a JavaScript program to remove duplicate items from an array
 
