@@ -284,3 +284,77 @@ console.log(char, maxTime + " times");
 // }
 
 // console.log(merge_array(array1, array2));
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// 31. Write a JavaScript function to remove a specific element from an array.
+
+// // Test data :
+// function remove_array_element(arr, target) {
+//   let indexOfTarget = arr.findIndex((e) => e === target);
+
+//   if (indexOfTarget !== -1) {
+//     // Check if the target element exists in the array
+//     arr.splice(indexOfTarget, 1); // Remove the element at the found index
+//     return arr; // Return the modified array
+//   } else {
+//     return arr; // If the target element is not found, return the original array
+//   }
+// }
+
+// console.log(remove_array_element([2, 5, 9, 6], 5)); // Output: [2, 9, 6]
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// 34. Write a JavaScript function to get the nth largest element from an unsorted array.
+
+// Test Data :
+
+// function nthlargest(arr, target) {
+//   let MaxNum = 0;
+
+//   let sliceUptoTarget = arr.slice(0, target);
+//   sliceUptoTarget.filter((ele) => (ele > MaxNum ? (MaxNum = ele) : ele));
+
+//   return MaxNum;
+// }
+
+// console.log(nthlargest([43, 56, 23, 89, 88, 90, 99, 652], 4));
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// 36. Write a JavaScript function to create a specified number of elements with a pre-filled numeric value array.
+
+// Test Data :
+
+// function array_filled(arrLength, elem) {
+//   return Array(arrLength).fill(elem);
+// }
+
+// console.log(array_filled(6, "asdf"));
+// console.log(array_filled(4, 11));
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// 40. Write a JavaScript function to generate an array of integer numbers, increasing one from the starting position, of a specified length.
+
+// Test Data :
+// function array_range(start, length) {
+//   let newArr = [];
+//   for (let i = 0; i < length; i++) {
+//     newArr.push(start + i);
+//   }
+//   return newArr;
+// }
+
+// console.log(array_range(1, 4));  // Output: [1, 2, 3, 4]
+// console.log(array_range(-6, 4)); // Output: [-6, -5, -4, -3]
+
