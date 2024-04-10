@@ -1,1 +1,286 @@
 console.log("Array Ques Ans");
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/*
+QUE 1. Write a JavaScript function to check whether an `input` is an array or not.
+ Test Data :
+ console.log(is_array('w3resource'));
+ console.log(is_array([1, 2, 4, 0]));
+ false
+ true
+ 
+ Ans:-------
+ 
+ function is_array(params) {
+   return Array.isArray(params);
+ }
+ 
+ console.log(is_array("w3resource"));
+ console.log(is_array([1, 2, 4, 0]));
+ */
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/* 2. Write a JavaScript function to clone an array.
+Test Data :
+console.log(array_Clone([1, 2, 4, 0]));
+console.log(array_Clone([1, 2, [4, 0]]));
+[1, 2, 4, 0]
+[1, 2, [4, 0]]
+
+
+Ans:----------------
+
+function array_Clone(params) {
+  return params.slice(0);
+}
+console.log(array_Clone([1, 2, 0]));
+
+*/
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/*
+6. Write a JavaScript program that accepts a number as input and inserts dashes (-) between each even number. For example if you accept 025468 the output should be 0-254-6-8.
+
+
+function insertDashes(num) {
+    var numStr = num.toString().split("");
+    
+    var result = numStr
+    .map((digit, index, array) => {
+        // Check if the digit is even
+        
+        if (parseInt(digit) % 2 === 0) {
+            // If the digit is even and it's not the first digit
+            // and the previous digit is also even, add a dash
+            if (index > 0 && parseInt(array[index - 1]) % 2 === 0) {
+                return "-" + digit;
+            }
+        }
+    return digit;
+})
+.join("");
+
+return result;
+}
+
+// Example usage:
+var inputNumber = 253468;
+var dashedNumber = insertDashes(inputNumber);
+console.log(dashedNumber); // Output: "2-534-68"
+
+*/
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/*
+
+
+// . Write a JavaScript function to find the difference between two arrays.
+// Test Data :
+// console.log(difference([1, 2, 3], [100, 2, 1, 10]));
+// ["3", "10", "100"]
+// console.log(difference([1, 2, 3, 4, 5], [1, [2], [3, [[4]]],[5,6]]));
+// ["6"]
+// console.log(difference([1, 2, 3], [100, 2, 1, 10]));
+// ["3", "10", "100"]
+
+
+// let arr1 = [1, 2, 3, 4, 5];
+// let arr2 = [1, [2], [3, [[4]]], [5, 6]];
+
+// function arrayDiffChecker(arr1, arr2) {
+//   const flatArr1 = arr1.flat(Infinity);
+//   const flatArr2 = arr2.flat(Infinity);
+
+//   return flatArr1.filter(item => !flatArr2.includes(item))
+//     .concat(flatArr2.filter(item => !flatArr1.includes(item)));
+// }
+
+// console.log(arrayDiffChecker(arr1, arr2));
+
+
+
+*/
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/*
+// 8. Write a JavaScript program to find the most frequent item in an array.
+// Sample array : var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+// Sample Output : a ( 5 times )
+var arr = [3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3];
+
+let uniqueVal = [...new Set(arr)];
+
+let maxTime = 0;
+let char = null;
+
+for (let i = 0; i < uniqueVal.length; i++) {
+  const occured = arr.filter((ele) => ele === uniqueVal[i]).length;
+
+  if (maxTime < occured) {
+    maxTime = occured;
+    char = uniqueVal[i];
+  }
+}
+
+console.log(char, maxTime + " times");
+
+// */
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// \14. Write a JavaScript program to remove duplicate items from an array (ignore case sensitivity).
+// let array = [3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3];
+// let updatedArr = [];
+
+// for (let i = 0; i < array.length; i++) {
+//   let isDuplicate = false;
+//   for (let j = 0; j < updatedArr.length; j++) {
+//     if (array[i] === updatedArr[j]) {
+//       isDuplicate = true;
+//     }
+//   }
+//   if (!isDuplicate) {
+//     updatedArr.push(array[i]);
+//   }
+// }
+
+// console.log(updatedArr);
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// 17. Write a JavaScript program to shuffle an array.
+
+// let arr = ["a", "b", "c", "d", "e"];
+
+// let shuffleCount = Math.floor(Math.random() * 10);
+
+// for (let i = 0; i < shuffleCount; i++) {
+//   let randomIndex = Math.floor(Math.random() * arr.length);
+//   let randomElem = arr.splice(randomIndex, 1)[0];
+//   let insertIndex = Math.floor(Math.random() * arr.length);
+//   arr.splice(insertIndex, 0, randomElem);
+// }
+
+// console.log(arr);
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// 19. There are two arrays with individual values. Write a JavaScript program to compute the sum of each individual index value in the given array.
+// Sample array :
+// array1 = [1,0,2,3,4];
+// array2 = [3,5,6,7,8,13];
+
+// let array1 = [1, 0, 2, 3, 4];
+// let array2 = [3, 5, 6, 7, 8, 13];
+
+// const outputArr = [];
+
+// // Determine the maximum length of the two arrays
+// let maxLength = Math.max(array1.length, array2.length);
+
+// // Iterate through the arrays up to the maximum length
+// for (let i = 0; i < maxLength; i++) {
+//     // Get the value from array1 at index i (if it exists)
+//     let value1 = array1[i] || 0;
+//     // Get the value from array2 at index i (if it exists)
+//     let value2 = array2[i] || 0;
+//     // Push the sum of the values into outputArr
+//     outputArr.push(value1 + value2);
+// }
+
+// console.log(outputArr);
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// 20. Write a JavaScript program to find duplicate values in a JavaScript array.
+
+// let array1 = [1, 2, 3, 3, 2, 3, 4, 4, 5, 6, 7, 7];
+
+// let uniq = [...new Set(array1)];
+
+// let duplicateElem = [];
+
+// for (let i = 0; i < uniq.length; i++) {
+//   let uniqElemCount = array1.filter((ele) => ele === uniq[i]).length;
+
+//   if (uniqElemCount > 1) {
+//     duplicateElem.push(uniq[i]);
+//   }
+// }
+
+// console.log(duplicateElem);
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// Write a JavaScript function to remove. 'null', '0', '""', 'false', 'undefined' and 'NaN' values from an array.
+// Sample array : [NaN, 0, 15, false, -22, '',undefined, 47, null]
+// Expected result : [15, -22, 47]
+
+// let arr = [NaN, 0, 15, false, -22, "", undefined, 47, null];
+
+// let updatedArr = arr.filter(
+//   (ele) =>
+//     !isNaN(ele) &&
+//     ele !== false &&
+//     ele !== "" &&
+//     ele !== undefined &&
+//     ele !== null &&
+//     ele !== 0
+// );
+
+// console.log(updatedArr);
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// 26. Write a JavaScript program to find a pair of elements (indices of the two numbers) in a given array whose sum equals a specific target number.
+
+// Input: numbers= [10,20,10,40,50,60,70], target=50
+// Output: 2, 3
+
+// let numbers = [10, 20, 30, 10, 40, 50, 60, 70];
+// let target = 50;
+
+// let pairs = [];
+
+// for (let i = 0; i < numbers.length; i++) {
+//   for (let j = i + 1; j < numbers.length; j++) {
+//     if (numbers[i] + numbers[j] === target)
+//       pairs.push([numbers[i], numbers[j]]);
+//   }
+// }
+// console.log(pairs);
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// 30. Write a JavaScript function that merges two arrays and removes all duplicate elements.
+
+// var array1 = [1, 2, 3];
+// var array2 = [2, 30, 1];
+
+// function merge_array(arr1, arr2) {
+//   let mergedArr = [...arr1]; // Make a copy of array1
+
+//   // Iterate over array2
+//   for (let i = 0; i < arr2.length; i++) {
+//     // Check if the current element of array2 is not already present in mergedArr
+//     if (!mergedArr.includes(arr2[i])) {
+//       // If not present, push it to mergedArr
+//       mergedArr.push(arr2[i]);
+//     }
+//   }
+
+//   return mergedArr; // Return the merged and de-duplicated array
+// }
+
+// console.log(merge_array(array1, array2));
