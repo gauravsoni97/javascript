@@ -428,3 +428,55 @@ console.log(char, maxTime + " times");
 // }
 
 // console.log(NumChecker(arr));
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// 52. Write a JavaScript program to get all the indexes where NaN is found in a given array of numbers and NaN.
+
+// Test Data :
+// ([2, NaN, 8, 16, 32]) -> [1]
+// ([2, 4, NaN, 16, 32, NaN]) -> [2,5]
+// ([2, 4, 16, 32]) ->[]
+
+// const arr = [2, NaN, 8, 16, NaN, 32];
+
+// function NanIndexAt(arr) {
+//   let indOfNan = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (isNaN(arr[i])) {
+//       indOfNan.push(i);
+//     }
+//   }
+//   return indOfNan;
+// }
+// console.log(NanIndexAt(arr));
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// 53. Write a JavaScript program to count the number of arrays inside a given array.
+
+// Test Data :
+// ([2,8,[6],3,3,5,3,4,[5,4]]) -> 2
+// ([2,8,[6,3,3],[4],5,[3,4,[5,4]]]) -> 3
+
+// Expected Output:
+// Number of arrays inside the said array: 2
+// Number of arrays inside the said array: 3
+
+// const arr = [2,8,[6,3,3],[4],5,[3,4,[5,4]]];
+
+// function ArrayChecker(arr) {
+//   let arrayCounter = []; 
+//   for (let i = 0; i < arr.length; i++) {
+//     if (Array.isArray(arr[i])) {
+//       arrayCounter.push(arr[i]);
+//     }
+//   }
+//   return arrayCounter.length;
+// }
+
+// console.log(ArrayChecker(arr));
+
