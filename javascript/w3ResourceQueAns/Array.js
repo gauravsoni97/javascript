@@ -358,3 +358,73 @@ console.log(char, maxTime + " times");
 // console.log(array_range(1, 4));  // Output: [1, 2, 3, 4]
 // console.log(array_range(-6, 4)); // Output: [-6, -5, -4, -3]
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// 48. Write a JavaScript program that takes an array of integers and returns false if every number is not prime. Otherwise, return true.
+
+// Test Data :
+// ([2,3,5,7]) -> true
+// ([2,3,5,7,8]) -> false
+
+// let arr = [2, 3, 5];
+
+// function isPrime(num) {
+//   if (num <= 1) {
+//     return false;
+//   }
+//   for (let i = 2; i <= Math.sqrt(num); i++) {
+//     if (num % i === 0) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// function areAllPrimes(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (!isPrime(arr[i])) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// console.log(areAllPrimes(arr)); // Output: false
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// 49. Write a JavaScript program that takes an array of numbers and returns the third smallest number.
+
+// Test Data :
+// (2,3,5,7,1) -> 3
+// (2,3,0,5,7,8,-2,-4) -> 0
+
+// let arr = [2, 3, 0, 5, 7, 8, -2, -4];
+
+// function NumChecker(arr) {
+//   return arr.sort()[2];
+// }
+
+// console.log(NumChecker(arr));
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// 50. Write a JavaScript program that takes an array with mixed data type and calculates the sum of all numbers.
+
+// Test Data :
+// ([2, "11", 3, "a2", false, 5, 7, 1]) -> 18
+// ([2, 3, 0, 5, 7, 8, true, false]) -> 25
+
+// let arr = [2, 3, 0, 5, 7, 8, true, false, NaN];
+
+// function NumChecker(arr) {
+//   return arr
+//     .filter((ele) => typeof ele === "number" && !isNaN(ele))
+//     .reduce((acc, curr) => acc + curr, 0);
+// }
+
+// console.log(NumChecker(arr));
