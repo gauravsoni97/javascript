@@ -113,17 +113,27 @@ console.log("----- Function Que Ans -------");
 // Example string : 'The quick brown fox'
 // Expected Output : 5
 
-let string = "The quick brown fox";
+// let string = "The quick brown fox";
 
-function vowelChecker(str) {
+// function vowelChecker(str) {
+//   let vowels = "aeiouAEIOU";
+//   let count = 0;
 
-  let vowels = 'aeiou'
+//   for (let i = 0; i < str.length; i++) {
+//     if (vowels.includes(str[i])) {
+//       count++;
+//     }
+//   }
 
+//   return count;
+// }
 
-
-
-}
-
-console.log(vowelChecker(string));
+// console.log(vowelChecker(string));
 
 // ======================================================
+
+
+// 8. Write a JavaScript function that accepts a number as a parameter and checks whether it is prime or not using recursion.
+// Note : A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+
+
