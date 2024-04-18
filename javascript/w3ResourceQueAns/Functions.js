@@ -47,12 +47,11 @@ console.log("----- Function Que Ans -------");
 
 // console.log(generateCombinations(inputString));
 
-
 // ======================================================
 
-// Que :  if n = 3 or multiple of 3 then print Fizz 
-//        if n = 5 or multiple of 5 then print Buzz 
-//         else print counting numbers 
+// Que :  if n = 3 or multiple of 3 then print Fizz
+//        if n = 5 or multiple of 5 then print Buzz
+//         else print counting numbers
 
 // let n = 20;
 
@@ -74,9 +73,57 @@ console.log("----- Function Que Ans -------");
 
 // console.log(func(n));
 
-
 // ======================================================
 
 // 5. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word into upper case.
 // Example string : 'the quick brown fox'
 // Expected Output : 'The Quick Brown Fox '
+
+// const string = "the quick brown fox";
+
+// function CapitalizeString(str) {
+//   return str
+//     .split(" ")
+//     .map((ele) => ele.charAt(0).toUpperCase() + ele.slice(1, ele.length))
+//     .join(" ");
+// }
+
+// console.log(CapitalizeString(string));
+
+// ======================================================
+
+//   6. Write a JavaScript function that accepts a string as a parameter and finds the longest word within the string.
+// Example string : 'Web Development Tutorial'
+// Expected Output : 'Development'
+
+// const string = "Web Development Tutorial";
+
+// const LongestString = (str) => {
+//   return  str.split(" ").reduce((longest, current) => {
+//     return current.length > longest.length ? current : longest;
+//   }, "");
+// };
+
+// console.log(LongestString(string));
+
+// ======================================================
+
+// 7. Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string.
+// Note : As the letter 'y' can be regarded as both a vowel and a consonant, we do not count 'y' as vowel here.
+// Example string : 'The quick brown fox'
+// Expected Output : 5
+
+let string = "The quick brown fox";
+
+function vowelChecker(str) {
+
+  let vowels = 'aeiou'
+
+
+
+
+}
+
+console.log(vowelChecker(string));
+
+// ======================================================
