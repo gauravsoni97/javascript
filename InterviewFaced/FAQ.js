@@ -35,7 +35,22 @@
 // --------------------------------------------------------------------
 
 // 3. Palindrome number
+
 // 4. Rotate Array by k times
+
+// function rotateArray(arr, k) {
+//     const n = arr.length;
+//     const rotations = k % n; // Handle cases where k > n
+//     const rotatedArray = [...arr.slice(rotations), ...arr.slice(0, rotations)];
+//     return rotatedArray;
+// }
+
+// // Example usage:
+// const array = [1, 2, 3, 4, 5];
+// const k = 2;
+// const rotatedArray = rotateArray(array, k);
+// console.log(rotatedArray); // Output: [4, 5, 1, 2, 3]
+
 
 
 // --------------------------------------------------------------------
