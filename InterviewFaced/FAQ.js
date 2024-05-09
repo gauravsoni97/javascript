@@ -36,6 +36,8 @@
 
 // 3. Palindrome number
 
+
+
 // 4. Rotate Array by k times
 
 // function rotateArray(arr, k) {
@@ -74,4 +76,24 @@
 // }
 
 // console.log(reverseArr(arr));
+
+// ==================================================================
+
+// 6. fibonacci series 
+// function fibonacciSeries(numTerms) {
+//     let series = [0, 1]; // Initialize the series with the first two terms
+    
+//     for (let i = 2; i < numTerms; i++) {
+//         // Calculate the next term by adding the last two terms
+//         let nextTerm = series[i - 1] + series[i - 2];
+//         series.push(nextTerm);
+//     }
+    
+//     return series;
+// }
+
+// // Example usage:
+// const numTerms = 10; // Change this number to generate Fibonacci series with different lengths
+// const series = fibonacciSeries(numTerms);
+// console.log("Fibonacci series up to", numTerms, "terms:", series);
 
