@@ -36,8 +36,6 @@
 
 // 3. Palindrome number
 
-
-
 // 4. Rotate Array by k times
 
 // function rotateArray(arr, k) {
@@ -52,8 +50,6 @@
 // const k = 2;
 // const rotatedArray = rotateArray(array, k);
 // console.log(rotatedArray); // Output: [4, 5, 1, 2, 3]
-
-
 
 // --------------------------------------------------------------------
 
@@ -79,16 +75,16 @@
 
 // ==================================================================
 
-// 6. fibonacci series 
+// 6. fibonacci series
 // function fibonacciSeries(numTerms) {
 //     let series = [0, 1]; // Initialize the series with the first two terms
-    
+
 //     for (let i = 2; i < numTerms; i++) {
 //         // Calculate the next term by adding the last two terms
 //         let nextTerm = series[i - 1] + series[i - 2];
 //         series.push(nextTerm);
 //     }
-    
+
 //     return series;
 // }
 
@@ -96,7 +92,6 @@
 // const numTerms = 10; // Change this number to generate Fibonacci series with different lengths
 // const series = fibonacciSeries(numTerms);
 // console.log("Fibonacci series up to", numTerms, "terms:", series);
-
 
 // =========================
 
@@ -109,3 +104,20 @@
 // const arr2 = ['A', 'B', 'C'];
 // const result = concatArraysByIndex(arr1, arr2);
 // console.log("Concatenated string:", result);
+
+// ===============================
+
+// closure example
+
+function outerFunction() {
+  let outerVariable = "I am from the outer function";
+
+  function innerFunction() {
+    return outerVariable; // innerFunction has access to outerVariable
+  }
+
+  return innerFunction;
+}
+
+let closureFunc = outerFunction(); // innerFunction is returned
+console.log(closureFunc()); // This will log: "I am from the outer function"
