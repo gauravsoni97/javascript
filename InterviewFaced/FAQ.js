@@ -97,3 +97,15 @@
 // const series = fibonacciSeries(numTerms);
 // console.log("Fibonacci series up to", numTerms, "terms:", series);
 
+
+// =========================
+
+// function concatArraysByIndex(arr1, arr2) {
+//     return arr1.map((element, index) => element + arr2[index] || '').join('');
+// }
+
+// // Example usage:
+// const arr1 = ['1', '2', '3'];
+// const arr2 = ['A', 'B', 'C'];
+// const result = concatArraysByIndex(arr1, arr2);
+// console.log("Concatenated string:", result);
