@@ -109,15 +109,40 @@
 
 // closure example
 
-function outerFunction() {
-  let outerVariable = "I am from the outer function";
+// function outerFunction() {
+//   let outerVariable = "I am from the outer function";
 
-  function innerFunction() {
-    return outerVariable; // innerFunction has access to outerVariable
-  }
+//   function innerFunction() {
+//     return outerVariable; // innerFunction has access to outerVariable
+//   }
 
-  return innerFunction;
-}
+//   return innerFunction;
+// }
 
-let closureFunc = outerFunction(); // innerFunction is returned
-console.log(closureFunc()); // This will log: "I am from the outer function"
+// let closureFunc = outerFunction(); // innerFunction is returned
+// console.log(closureFunc()); // This will log: "I am from the outer function"
+
+
+// =====================================
+
+
+// debouncing 
+
+// const inputField = document.getElementById("inputField");
+
+// function debounceFunc(cb, d) {
+//   let timer;
+//   return function () {
+//     clearTimeout(timer);
+//     timer = setTimeout(() => {
+//       cb();
+//     }, d);
+//   };
+// }
+
+// inputField.addEventListener(
+//   "input",
+//   debounceFunc(() => {
+//     console.log(inputField.value);
+//   }, 1000)
+// );
