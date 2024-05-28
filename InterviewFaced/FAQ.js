@@ -34,7 +34,7 @@
 // console.log(uniqueArr);
 // --------------------------------------------------------------------
 
-// 3. Palindrome number
+// 3. Palindrome number - array - split reverse join
 
 // 4. Rotate Array by k times
 
@@ -80,7 +80,7 @@
 //     let series = [0, 1]; // Initialize the series with the first two terms
 
 //     for (let i = 2; i < numTerms; i++) {
-//         // Calculate the next term by adding the last two terms
+//         
 //         let nextTerm = series[i - 1] + series[i - 2];
 //         series.push(nextTerm);
 //     }
@@ -93,7 +93,7 @@
 // const series = fibonacciSeries(numTerms);
 // console.log("Fibonacci series up to", numTerms, "terms:", series);
 
-// =========================
+// ====================================================================================================
 
 // function concatArraysByIndex(arr1, arr2) {
 //     return arr1.map((element, index) => element + arr2[index] || '').join('');
@@ -113,17 +113,17 @@
 //   let outerVariable = "I am from the outer function";
 
 //   function innerFunction() {
-//     return outerVariable; // innerFunction has access to outerVariable
+//     return outerVariable; 
 //   }
 
 //   return innerFunction;
 // }
 
-// let closureFunc = outerFunction(); // innerFunction is returned
-// console.log(closureFunc()); // This will log: "I am from the outer function"
+// let closureFunc = outerFunction(); 
+// console.log(closureFunc()); 
 
 
-// =====================================
+// ========================================================================================
 
 
 // debouncing 
@@ -146,3 +146,23 @@
 //     console.log(inputField.value);
 //   }, 1000)
 // );
+
+
+
+
+// let arr= [1,2,3, [4,5,6], 7,8,9, [10, [11,12, [21,22,23,24],14], 15,16], 17, 18, 19, 20 ];
+
+// let newArr = [];
+
+// function flatArr(arr) {
+//     for(let i = 0; i < arr.length; i++) {
+//         if (Array.isArray(arr[i])) {
+//             flatArr(arr[i]); // Recursively call flatArr if the element is an array
+//         } else {
+//             newArr.push(arr[i]);
+//         }
+//     }
+// }
+
+// flatArr(arr);
+// console.log(newArr);
